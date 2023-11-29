@@ -1,0 +1,11 @@
+prefix=/home/sailing/works/svn/Project/libdrm-rockchip-rk33-mid-9.0-develop/build
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libdrm_radeon
+Description: Userspace interface to kernel DRM services for radeon
+Version: 2.4.75
+Libs: -L${libdir} -ldrm_radeon
+Cflags: -I${includedir} -I${includedir}/libdrm
+Requires.private: libdrm

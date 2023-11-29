@@ -1,0 +1,11 @@
+prefix=/home/sailing/works/svn/Project/libdrm-rockchip-rk33-mid-9.0-develop/build
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libdrm_freedreno
+Description: Userspace interface to freedreno kernel DRM services
+Version: 2.4.75
+Libs: -L${libdir} -ldrm_freedreno
+Cflags: -I${includedir} -I${includedir}/libdrm -I${includedir}/freedreno
+Requires.private: libdrm
